@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Wysiwyg editor for impress.js</title>
+    <meta name="author" content="Bartek Szopka" />
+    <meta name="author" content="Ondrej Bartas" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="stylesheets/impress-demo.css" rel="stylesheet" />
+    <link href="stylesheets/editor.css" rel="stylesheet" />
+    <script src="javascripts/jquery.min.js"></script>
+    <script src="javascripts/jquery.ui.min.js"></script>
+    <script src="javascripts/jquery-css-transform.js"></script>
+    <script src="javascripts/editor.js"></script>
+    
+</head>
+<body>
+  <div id="impress" style="border:1px solid red">
+    <div id="zoom">
+      <div id="bored" class="step slide" data-x="0" data-y="0" data-z="10">
+          <q>Aren't you just <b>bored</b> with all those slides-based presentations?</q>
+      </div>
+  
+      <div class="step slide" data-x="0" data-y="500" data-z="500">
+          <q>Don't you think that presentations given <strong>in modern browsers</strong> shouldn't <strong>copy the limits</strong> of 'classic' slide decks?</q>
+      </div>
+
+    </div>
+  </div>
+  <div style="pointer-events: auto;">
+    <button class="home">home</button>
+    <button class="zoom-in">Zoom in</button>
+    <button class="zoom-out">Zoom out</button>
+    <button class="rotate-left">left</button>
+    <button class="rotate-rigth">right</button>
+    <button class="rotate-top">top</button>
+    <button class="rotate-bottom">bottom</button>
+  </div>
+</body>
+</html>
